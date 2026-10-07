@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mint · Pretendard 글자 설정의 개인정보처리방침. 사이트별 설정은 기기에 저장되며 외부로 전송되지 않습니다.">
+  <title>개인정보처리방침 · Mint</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#f2f7f4;color:#19372b;font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;line-height:1.85}
+    main{max-width:860px;margin:48px auto;padding:44px 48px;background:#fff;border:1px solid #dce9e1;border-radius:18px}
+    .brand{color:#137b5e;font-weight:650;font-size:15px}h1{margin:12px 0;font-size:30px;line-height:1.4;letter-spacing:-1px}
+    .date{color:#647b6e;font-size:14px;margin:0 0 32px}h2{font-size:20px;line-height:1.5;margin:30px 0 10px}p{margin:10px 0}li{margin:8px 0}ul{padding-left:24px}
+    .notice{padding:18px 22px;border-radius:10px;background:#eaf7ef;color:#245f46}footer{margin-top:36px;border-top:1px solid #e4ece6;padding-top:20px;color:#647b6e;font-size:14px}
+    @media(max-width:600px){main{margin:16px;padding:26px 22px}h1{font-size:25px}}
+  </style>
+</head>
+<body><main>
+  <div class="brand">Mint · Pretendard 글자 설정</div>
+  <h1>개인정보처리방침</h1>
+  <p class="date">시행일 및 최종 수정일: 2026년 10월 7일 · 대상 버전: 1.0.2</p>
+  <p class="notice">Mint는 사용자가 선택한 사이트의 글자 크기, 줄 높이와 글꼴을 조정합니다. 이 기능에 필요한 정보는 사용자의 브라우저 안에서 처리하며, 확장 프로그램이 개발자나 외부 서버로 전송하지 않습니다.</p>
+  <h2>1. 처리하는 정보와 목적</h2>
+  <ul>
+    <li><strong>사이트 주소:</strong> 현재 웹페이지의 주소에서 프로토콜, 호스트와 포트로 구성된 사이트 식별 정보(origin)를 확인합니다. 사이트별 설정을 구분하고 다시 방문했을 때 해당 설정을 적용하기 위한 용도입니다. 페이지 경로, 검색어와 URL 쿼리 문자열은 설정 저장 키에 포함하지 않습니다.</li>
+    <li><strong>글자 설정:</strong> 사용자가 저장한 글자 크기 조절값, 줄 높이, 설정 저장 시각과 내부 설정 형식 버전을 브라우저의 로컬 확장 프로그램 저장소(chrome.storage.local)에 보관합니다.</li>
+    <li><strong>웹사이트 표시 정보:</strong> 설정이 적용된 페이지의 요소, 텍스트 노드와 글자 크기·줄 높이·글꼴 등의 스타일 정보를 일시적으로 읽고 처리합니다. 제목과 본문의 크기 차이를 유지하고 아이콘 글꼴을 구분하며, 설정 해제 시 원래 표시로 복원하기 위한 용도입니다. 필요한 원래 스타일과 속성값은 해당 페이지의 메모리에 일시 보관합니다. 페이지 본문은 영구 저장하거나 외부로 전송하지 않습니다.</li>
+  </ul>
+  <p>전체 방문 이력이나 방문 시각의 로그를 만들지 않습니다. 로그인 정보, 결제 정보, 연락처, 위치 정보 등을 별도로 추출하거나 기록하는 기능이 없습니다.</p>
+  <h2>2. 저장 위치와 보관 기간</h2>
+  <p>사이트별 글자 설정은 사용자의 현재 Chrome 프로필에 저장되며 개발자에게 전달되지 않습니다. Chrome 계정의 동기화 저장소를 사용하지 않습니다. 사용자가 ‘설정풀기’를 누르거나 확장 프로그램을 제거할 때까지 설정이 유지됩니다.</p>
+  <p>페이지 표시를 복원하기 위한 일시 정보는 해당 페이지에서만 처리하며, 설정을 해제하거나 페이지가 종료되면 더 이상 유지하지 않습니다.</p>
+  <h2>3. 외부 전송과 제3자 제공</h2>
+  <p>확장 프로그램은 처리한 사이트 주소, 글자 설정 및 페이지 정보를 개발자, 광고업체 또는 기타 제3자에게 전송하거나 판매하지 않습니다. 광고, 방문 분석, 원격 오류 수집, 사용자 추적을 위한 기능이나 외부 분석 도구를 포함하지 않습니다.</p>
+  <p>Pretendard 폰트와 실행 코드는 확장 프로그램 패키지에 포함됩니다. 폰트 제공을 위해 외부 CDN에 접속하지 않으며, 외부에서 실행 코드를 다운로드하지 않습니다.</p>
+  <h2>4. 권한의 사용</h2>
+  <ul>
+    <li><strong>storage:</strong> 사이트별 설정을 저장·조회·삭제하고 같은 사이트의 열린 페이지에 설정 변경을 반영합니다.</li>
+    <li><strong>scripting:</strong> 글자 표시를 변경하는 코드와 CSS를 적용하고, 설정 해제 시 제거합니다.</li>
+    <li><strong>HTTP·HTTPS 사이트 접근:</strong> 사용자가 선택한 일반 웹사이트에서 표시를 변경하고, 새로고침이나 재방문 후 저장된 설정을 자동 적용합니다. 콘텐츠 스크립트는 저장된 설정을 확인하고, 설정이 없는 사이트에는 글자 표시 변경을 적용하지 않습니다.</li>
+  </ul>
+  <h2>5. 사용자의 변경·삭제 방법</h2>
+  <p>해당 사이트에서 확장 프로그램을 열어 ‘설정하기’를 누르면 설정을 변경할 수 있습니다. ‘설정풀기’를 누르면 그 사이트에 저장한 설정과 저장 시각이 삭제되고 원래 글자 표시로 복원됩니다. 확장 프로그램을 제거하면 Chrome의 해당 확장 프로그램 로컬 저장 데이터도 삭제됩니다.</p>
+  <h2>6. 제한적 사용과 정책 변경</h2>
+  <p>Mint는 Chrome 웹 스토어 사용자 데이터 정책과 제한적 사용(Limited Use) 요구사항을 준수합니다. 처리하는 정보는 공개된 단일 목적, 즉 사이트별 글자 표시 조정과 설정 유지에만 사용합니다. 관련 없는 광고, 프로파일링, 신용도 판단 또는 대출 목적으로 사용하지 않습니다.</p>
+  <p>처리하는 정보나 기능이 변경되는 경우 이 방침과 Chrome 웹 스토어의 데이터 공개 내용을 실제 동작에 맞게 갱신하고 수정일을 표시합니다.</p>
+  <h2>7. 문의</h2>
+  <p>이 방침과 확장 프로그램에 관한 문의는 Chrome 웹 스토어의 ‘Mint · Pretendard 글자 설정’ 등록 페이지에 제공되는 지원 경로를 이용해 주세요.</p>
+  <footer>이 방침은 확장 프로그램의 데이터 처리에 관한 내용입니다. 사용자가 방문하는 웹사이트와 Chrome 웹 스토어 자체의 데이터 처리는 각 서비스의 개인정보처리방침이 적용됩니다.</footer>
+</main></body></html>
